@@ -1,0 +1,10 @@
+
+{% extends "base.html" %}
+{% block content %}
+  <!-- TODO: Fyll ut når du har laget ruten /post/<int:post_id> -->
+  <h1>{{ post[1] }}</h1>
+  <article>
+    {{ post[2] | safe }}
+  </article>
+  <p><a href="{{ url_for('hello') }}">Tilbake</a></p>
+{% endblock %}
