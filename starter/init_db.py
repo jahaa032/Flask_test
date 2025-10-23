@@ -13,5 +13,6 @@ with sqlite3.connect("blog.db") as con:
     ('Flask-tips', '<ul><li>Bruk <code>url_for</code></li><li>Arv fra
     base.html</li></ul>'),
     ('Dagens sitat', '<blockquote>«Code is like humor. When you have to explain it,
-    it’s bad.»</blockquote>');
+    it’s bad.»</blockquote>'),
+    ('Slette post', '<p>Hei kom og slett poster da!</p>');
     """)

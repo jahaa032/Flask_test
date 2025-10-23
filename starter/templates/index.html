@@ -6,6 +6,7 @@
     {% for post in posts %}
     <li>
       <a href="{{ url_for('post_detail', post_id=post[0]) }}">
+      <button onclick="slett_post">Slett</button>        
       <strong>{{ post[1] }}</strong>
       </a>
     </li>
