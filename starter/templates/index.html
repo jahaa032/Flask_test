@@ -2,6 +2,13 @@
 {% extends "base.html" %}
 {% block content %}
   <h1>Innlegg</h1>
-  <!-- TODO: Når du har laget posts (liste av lister) i app.py, loop og vis tittel med post[1] -->
-  <p>Her kommer listen over innlegg…</p>
+  <ul class ="posts">
+    {% for post in posts %}
+    <li>
+      <a href="{{ url_for('post_detail', post_id=post[0]) }}">
+      <strong>{{ post[1] }}</strong>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
 {% endblock %}
