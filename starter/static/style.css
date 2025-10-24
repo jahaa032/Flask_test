@@ -10,3 +10,25 @@ nav a:hover { text-decoration: underline; }
 ul.posts { list-style: none; padding: 0; }
 ul.posts li { padding: .5rem 0; border-bottom: 1px solid #eee; }
 .meta { color: #555; font-size: .9rem; }
+
+
+.post {
+  background: #fff;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.delete-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}
